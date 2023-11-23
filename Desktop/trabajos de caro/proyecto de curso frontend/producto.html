@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Itim&family=Quicksand:wght@300;500;700&display=swap');
+
+      body {
+        font-family: 'Quicksand', sans-serif;
+        margin: 0%;
+      }
+
+      :root {
+        --very-light-grey: #939292;
+        --text-input-field: #eae6e6;
+        --hospital-green: #acd9b2;
+        --white: white;
+        --black: black;
+        --sm: 14px;
+        --md: 16px;
+        --lg: 21px; 
+      }
+
+      .product-card {
+        width: 360px;
+        position: absolute;
+        right: 0%;
+      }
+
+      .product-card > img:nth-child(1) {
+        width: 20px;
+        cursor: pointer;
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        background-color: var(--white);
+        padding: 8px;
+        border-radius: 50%;
+      }
+
+      .product-card > img:nth-child(1):hover {
+        border: 1px solid var(--hospital-green);
+        border-radius: 50%;
+        padding: 8px;
+      }
+
+      aside .img-product {
+        width: 100%;
+        border-radius: 0 0 20px;
+        margin-bottom: 24px;
+      }
+
+      .info {
+        margin: 0 24px;
+      }
+
+      .info p:nth-child(1) {
+        font-weight: bold;
+        margin-top: 0;
+        margin-bottom: 4px;
+      }
+
+      .info p:nth-child(2) {
+        color: var(--very-light-grey);
+        margin-top: 0;
+        margin-bottom: 25px;
+      }
+
+      .info p:nth-child(3) {
+        color: var(--very-light-grey);
+        font-size: var(--sm);
+        margin-bottom: 36px;
+      }
+
+      .contenedor-boton {
+        margin-left: 8px;
+        margin-right: 8px;
+      }
+
+      .boton {
+        height: 55px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 10px;
+        background-color: var(--hospital-green);
+        color: var(--white);
+        font-size: 18px;
+        font-family: 'Quicksand';
+        cursor: pointer;
+        font-weight: bold;
+        margin-top: 15px;
+      }
+
+      @media (max-width: 640px) {
+          .product-card {
+            width: 100%;
+          }
+        }
+    </style>
+  </head>
+  <body>
+    <aside class="product-card">
+      <img src="./assets/icon_close.png" alt="">
+      <img src="./assets/silla.jpg" alt="" class="img-product">
+      <div class="info">
+        <p>$35,00</p>
+        <p>Chair</p>
+        <p>A warm, comfortable, padded rocking chair.</p>
+      </div>
+      <div class="contenedor-boton">
+        <button class="boton">
+        <img src="./assets/bt_add_to_cart.svg" alt="">
+        Add to cart
+        </button>
+      </div>
+      
+    </aside>
+  </body>
+</html>

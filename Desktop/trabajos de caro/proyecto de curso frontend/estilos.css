@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Quicksand:wght@300;500;700&display=swap');
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0%;
+}
+
+:root {
+  --very-light-grey: #939292;
+  --text-input-field: #eae6e6;
+  --hospital-green: #acd9b2;
+  --white: white;
+  --black: black;
+  --sm: 14px;
+  --md: 16px;
+  --lg: 21px; 
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--text-input-field);
+  padding: 0 50px
+}
+
+.navbar-left {
+  display: flex;
+}
+
+.menu {
+  display: none;
+}
+
+.logo {
+  width: 120px;
+  margin-right: 70px;
+}
+
+.email {
+  cursor: pointer;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.navbar ul li a, .navbar ul li {
+  text-decoration: none;
+  color: var(--very-light-grey);
+  margin: 9px;
+}
+
+.navbar ul li a:hover {
+  padding: 6px;
+  border-radius: 8px;
+  border: 1px solid var(--hospital-green);
+  color: var(--hospital-green);
+}
+
+.navbar-right ul li:nth-child(2) div {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  color: var(--black);
+  background-color: var(--hospital-green);
+  font-size: var(--sm);
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+.navbar-right {
+  position: relative;
+}
+
+.navbar-right img {
+  width: 30px;
+}
+
+.desktop-menu {
+  position: absolute;
+  right: 100px;
+  top: 70px;
+  background-color: var(--white);
+  width: 100px;
+  height: auto;
+  border: 1px solid var(--very-light-grey);
+  border-radius: 5px;
+  padding: 20px 20px 0 20px;
+}
+
+.inactive {
+  display: none;
+}
+
+.desktop-menu ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.desktop-menu ul li {
+  text-align: end;
+}
+
+.desktop-menu ul li:not(:last-child) {
+  font-weight: bold;
+}
+
+.desktop-menu ul li a {
+  color: var(--black);
+  text-decoration: none;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.desktop-menu ul li:last-child {
+  padding-top: 20px;
+  border-top: 1px solid var(--very-light-grey);
+}
+
+.desktop-menu ul li:last-child a {
+  color: var(--hospital-green);
+  font-size: var(--sm);
+}
+
+
+@media (max-width: 900px) {
+  .menu {
+    display: block;
+  }
+  nav {
+    padding: 0 24px;
+  }
+  .logo {
+    justify-content: center;
+    margin: 0;
+  }
+  .navbar-left {
+    display: none;
+  }
+  .navbar-right img {
+    width: 25px;
+  }
+  .email {
+    display: none;
+  }
+}

@@ -1,3 +1,5 @@
+/* variables globales */
+
 @import url('https://fonts.googleapis.com/css2?family=Itim&family=Quicksand:wght@300;500;700&display=swap');
 
 body {
@@ -16,6 +18,12 @@ body {
   --lg: 21px; 
 }
 
+.inactive {
+  display: none;
+}
+
+/* navbar */
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -33,6 +41,7 @@ nav {
 
 .logo {
   width: 120px;
+  margin-left: 20px;
   margin-right: 70px;
 }
 
@@ -84,6 +93,8 @@ nav {
   width: 30px;
 }
 
+/* menú en desktop */
+
 .desktop-menu {
   position: absolute;
   right: 100px;
@@ -94,10 +105,6 @@ nav {
   border: 1px solid var(--very-light-grey);
   border-radius: 5px;
   padding: 20px 20px 0 20px;
-}
-
-.inactive {
-  display: none;
 }
 
 .desktop-menu ul {
@@ -131,8 +138,59 @@ nav {
   font-size: var(--sm);
 }
 
+/* menú en mobile */
 
-@media (max-width: 900px) {
+.menu-mobile {
+  position: absolute;
+  top: 60px;
+  padding: 40px;
+}
+
+.menu-mobile ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.menu-mobile ul li a, .menu-mobile ul li {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: bold;
+}
+
+.you {
+  border-top: 1px solid var(--very-light-grey);
+}
+.you ul {
+  margin-top: 25px;
+}
+
+.ult-container {
+  position: absolute;
+  bottom: 0%;
+}
+
+.email ul {
+  margin-bottom: 10px;
+
+}
+
+.email ul li a {
+  font-weight: 300;
+  font-size: var(--sm);
+}
+
+.signout ul {
+  margin-top: 0;
+}
+
+.signout ul li a {
+  color: var(--hospital-green);
+  font-size: var(--sm);
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
   .menu {
     display: block;
   }
@@ -152,4 +210,14 @@ nav {
   .email {
     display: none;
   }
+  .desktop-menu {
+    display: none;
+  }
 }
+
+@media (min-width: 601px) {
+  .menu-mobile {
+    display: none;
+  }
+}
+

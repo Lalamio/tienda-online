@@ -23,13 +23,13 @@
         --lg: 21px; 
       }
 
-      .product-card {
-        width: 360px;
+      .product-detail {
         position: absolute;
-        right: 0%;
+        top: 61px;
+        width: 360px;
       }
 
-      .product-card > img:nth-child(1) {
+      .product-detail > img:nth-child(1) {
         width: 20px;
         cursor: pointer;
         position: absolute;
@@ -40,7 +40,7 @@
         border-radius: 50%;
       }
 
-      .product-card > img:nth-child(1):hover {
+      .product-detail > img:nth-child(1):hover {
         border: 1px solid var(--hospital-green);
         border-radius: 50%;
         padding: 8px;
@@ -97,14 +97,14 @@
       }
 
       @media (max-width: 640px) {
-          .product-card {
+          .product-detail {
             width: 100%;
           }
         }
     </style>
   </head>
   <body>
-    <aside class="product-card">
+    <aside class="product-detail">
       <img src="./assets/icon_close.png" alt="">
       <img src="./assets/silla.jpg" alt="" class="img-product">
       <div class="info">
@@ -118,7 +118,7 @@
         Add to cart
         </button>
       </div>
-      
     </aside>
+
   </body>
 </html>

@@ -4,12 +4,15 @@ const mobileMenu = document.querySelector('.menu-mobile');
 const burguerMenu = document.querySelector('.menu-hamburguesa')
 const menuCarritoIcon = document.querySelector('.shopping-cart');
 const menuCarrito = document.querySelector('.carrito');
-const cardsContainer = document.querySelector('.cards-container')
+const cardsContainer = document.querySelector('.cards-container');
+const containerDetail = document.querySelector('.product-detail');
+const tarjetaProduct = document.querySelector('.product-card');
 
 menuEmail.addEventListener('click', toggleDesktopMenu);
 burguerMenu.addEventListener('click', toggleMobileMenu);
 menuCarritoIcon.addEventListener('click', toggleMenuCarrito);
-
+/* tarjetaProduct.addEventListener('click', toggleDetallesProducto);
+ */
 function toggleDesktopMenu() {
   const menuCarritoClosed = menuCarrito.classList.contains('inactive');
 
@@ -45,6 +48,10 @@ function toggleMenuCarrito() {
   menuCarrito.classList.toggle('inactive');
 }
 
+function toggleDetallesProducto() {
+  containerDetail.classList.toggle('inactive');
+
+}
 
 
 const productList = [];

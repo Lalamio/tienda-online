@@ -31,7 +31,7 @@
         place-items: center;
       }
 
-      .container {
+      .container-carrito {
         position: absolute;
         right: 10px;
         top: 0%;
@@ -124,7 +124,7 @@
       }
 
       @media (max-width: 600px) {
-        .container {
+        .container-carrito {
           width: 100%;
           padding-left: 20px;
           box-sizing: border-box;
@@ -133,8 +133,8 @@
     </style>
   </head>
   <body>
-    <div class="carrito">
-      <div class="container">
+    <aside class="carrito">
+      <div class="container-carrito">
         <header class="cabecera">
           <img src="./assets/flechita.svg" alt="flecha">
           <h1 class="title">Shopping cart</h1>
@@ -177,7 +177,7 @@
 
         <footer class="footer">        
           <p>
-            <span>03.25.21</span>
+            <span>Total</span>
             <span>4 articles</span>
           </p>
   
@@ -189,6 +189,6 @@
         <button class="check-button">Checkout</button>
 
       </div>
-    </div>
+    </aside>
   </body>
 </html>

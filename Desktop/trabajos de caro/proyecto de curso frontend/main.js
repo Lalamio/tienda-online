@@ -4,6 +4,7 @@ const mobileMenu = document.querySelector('.menu-mobile');
 const burguerMenu = document.querySelector('.menu-hamburguesa')
 const menuCarritoIcon = document.querySelector('.shopping-cart');
 const menuCarrito = document.querySelector('.carrito');
+const cardsContainer = document.querySelector('.cards-container')
 
 menuEmail.addEventListener('click', toggleDesktopMenu);
 burguerMenu.addEventListener('click', toggleMobileMenu);
@@ -50,19 +51,19 @@ const productList = [];
 productList.push({
   name: 'Bike',
   price: 120,
-  image: './assets/pexels-pixabay-276517.jpg'
+  image: './assets/pexels-pixabay-276517.jpg',
 });
 
 productList.push({
   name: 'Book',
   price: 20,
-  image: './assets/pexels-pixabay-276517.jpg'
+  image: './assets/pexels-pixabay-276517.jpg',
 });
 
 productList.push({
   name: 'Desktop',
   price: 300,
-  image: './assets/pexels-pixabay-276517.jpg'
+  img: './assets/silla.jpg',
 });
 
 {/* <div class="product-card">
@@ -80,11 +81,11 @@ productList.push({
 
 for (product of productList) {
   const productCard = document.createElement('div');
-  productCard.classList.add('product-card')
+  productCard.classList.add('product-card');
 
   // product = {name, price, image} -> product.image
-  const img = document.createElement('img');
-  img.setAttribute('src', product.image);
+  const productImage = document.createElement('img');
+  productImage.setAttribute('src', './assets/silla.jpg');
 
   const productInfo = document.createElement('div');
   productInfo.classList.add('product-description');
@@ -97,12 +98,13 @@ for (product of productList) {
   productName.innerText = product.name;
 
   const productInfoFigure = document.createElement('div');
-  const productImg = document.createElement('img');
-  productImg.setAttribute('src', './assets/bt_add_to_cart.svg');
+  const productIcon = document.createElement('img');
+  productImage.setAttribute('src', './assets/bt_add_to_cart.svg');
 
-  productCard.append(img, productInfo);
+  cardsContainer.append(productCard);
+  productCard.append(productImage, productInfo);
   productInfo.append(productInfoDiv, productInfoFigure);
   productInfoDiv.append(productPrice, productName);
-  productInfoFigure.append(productImg);
+  productInfoFigure.append(productIcon);
 
 }

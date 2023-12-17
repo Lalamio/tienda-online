@@ -1,0 +1,12 @@
+.product-detail {
+  width: 400px;
+  height: calc(100vh - 68px);
+  top: 68px;
+  margin-right: 20px;
+}
+
+.svg {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}

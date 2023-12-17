@@ -9,6 +9,7 @@ import NotFound from '../NotFound';
 import SigIn from '../SignIn';
 import Navbar from '../../Components/Navbar';
 import './App.css';
+import CheckoutSideMenu from '../../Components/CheckoutSideMenu';
 
 const AppRoutes = () => {
  let routes = useRoutes([ /* a esta variable le vamos a encargar el hook, dentro tendrá un array y dentro objetos */
@@ -27,6 +28,7 @@ function App() {
   return (
     <>
       <BerryProvider>
+        <CheckoutSideMenu />
         <BrowserRouter>
         <Navbar />
         <AppRoutes />

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react' /* cuando pensamos en consumir APIs,
 
 import Layout from "../../Components/Layout"
 import Card from "../../Components/Card"
+import ProductDetail from '../../Components/ProductDetail';
 
 function Home() {
   const [products, setProducts] = useState(null);
@@ -29,6 +30,7 @@ function Home() {
               })
             }
         </div>
+        <ProductDetail />
       </Layout>
   )
 }

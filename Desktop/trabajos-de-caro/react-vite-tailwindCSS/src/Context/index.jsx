@@ -1,12 +1,16 @@
-import { CreateContext } from 'react'
+import { createContext,useState } from 'react'
 import PropTypes from "prop-types"
 
 
-const BerryContext = CreateContext();
+export const BerryContext = createContext();
 
 export const BerryProvider = ({children}) => {
+  const [count, setCount] = useState(0)
   return (
-    <BerryContext.Provider>
+    <BerryContext.Provider value={{
+      count,
+      setCount
+    }}>
     {children}
     </BerryContext.Provider>
   )

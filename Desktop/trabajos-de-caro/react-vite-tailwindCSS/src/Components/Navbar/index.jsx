@@ -1,6 +1,10 @@
 import { NavLink } from "react-router-dom" /* es un tipo especial de <Link> para saber si su contenido está activo, pendiente o en transición. esta herramienta nos ayudará a asignarle clases a nuevos elementos dependiendo de su estado */
+import { useContext } from 'react'
+import { BerryContext } from '../../Context'
 
 const Navbar = () => {
+
+  const Context = useContext(BerryContext);
   let activeStyle = 'underline underline-offset-4'
   
   return (
@@ -114,7 +118,7 @@ const Navbar = () => {
         </li>
 
         <li>
-          🛒 0
+          🛒 {Context.count}
         </li>
         
       </ul>

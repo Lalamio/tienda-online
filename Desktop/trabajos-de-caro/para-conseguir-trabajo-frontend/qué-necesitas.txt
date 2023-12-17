@@ -1,0 +1,34 @@
+      ~* Responsabilidades como frontend *~
+
+-> Pasar del diseño a la web
+
+-> Asegurar la compatibilidad y que sea responsive
+
+->Crear codigo reutilizable
+
+-> Optimizar sitios web (rendimiento, velocidad y escalables)
+ 
+-> Hacer sitios web accesibles
+
+
+      ~* Que necesito para cumplir con las responsabilidades *~
+
+-> Tener buenas bases de HTML, CSS y Javascript
+
+-> Conocer frameworks de javascript (ReactJS, Angular, VueJS)
+
+-> Conocer algun framework de CSS (bootstrap, materialize, tailwindcss)
+
+->Conocer un preprocesador (SASS, Stylus)
+
+->Consumo de API's
+
+-> Saber diseño responsive
+
+-> Hacer sitios compatibles para todos los navegadores (chrome, firefox, safari)
+
+-> Conocer sobre testing y debuggin
+
+-> Saber algun tipo de versionamiento para trabajo colaborativo (Git, SVN)
+
+-> Saber de accesibilidad, performance y rendimiento

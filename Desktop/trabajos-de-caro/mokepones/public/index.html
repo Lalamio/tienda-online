@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>🔥 💧 🌱</title>
+    <link rel="stylesheet" href="./mokepon-style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <section id="seleccionar-guerrero">
+      <h1 class="título">MOKEPON</h1>
+      <h2 class="subtitulo">elige tu guerrero: </h2>
+
+      <div id='contenedor-tarjetas' class="tarjetas">
+
+      </div>
+    
+      <button class="seleccion" id="boton.seleccion">seleccionar</button>
+    </section>
+
+    <section id="ver-mapa">
+      <h1 class="titulo2">recorre el mapa con tu mokepon</h1>
+      <h2 class="subtitulo3">usa las flechas del teclado</h2>
+      <canvas id="mapa"></canvas>
+      <button onmouseup="detener()" onmousedown="moverArriba()">Arriba</button>
+      <div>
+        <button onmouseup="detener()" onmousedown="moverIzquierda()">Izquierda</button>
+        <button onmouseup="detener()" onmousedown="moverAbajo()">Abajo</button>
+        <button onmouseup="detener()" onmousedown="moverDerecha()">Derecha</button>
+      </div>
+
+    </section>
+
+    <section id="seleccionar-ataque">
+
+      <h1 class="título">MOKEPON</h1>
+
+      <div id='contenedor-ataques'>
+        <h2 class="subtitulo2">elige la secuencia de los ataques: </h2>
+      </div>
+
+       <div id="mensajería">
+          <p id="resultado">¡Mucha suerte! 😌</p>
+          <button class="boton-reiniciar" id="boton.partida">volver a jugar</button>
+      </div>
+
+      <div class="contenedor-ataques">
+        <h3>Victorias</h3>
+
+        <div class="ataques">
+          <div class="bloque-jugador">
+            <span id="victorias">0</span>
+            <p id="guerrero"></p>
+            <p id="ataque-jugador"></p>
+          </div>
+          
+          <div class="bloque-enemigo">
+            <p id="victorias-enemigas">0</p>
+            <p id="guerrero-enemigo"></p>
+            <p id="ataque-enemigo"></p>
+          </div>
+        </div>
+
+      </div>
+      
+    </section>
+    <script src="./pon.js"></script>
+  </body>
+</html>

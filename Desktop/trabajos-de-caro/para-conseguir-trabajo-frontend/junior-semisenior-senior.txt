@@ -1,0 +1,22 @@
+    ~* Junior: personas que apenas están comenzando, apasionados por el conocimiento
+
+Menos de 2 años de experiencia
+Necesita ser guiado
+Tiene muchas ganas de aprender y su trabajo está bajo supervisión.
+
+   ~* Semi Senior
+
+Entre 2 y 5 ó 6 años de experiencia
+No requiere constante guianza por parte del equipo
+Es proactivo
+Es propositivo
+
+    ~* Senior
+
+Más de 5 ó 6 años de experiencia
+Alta autonomía, no requiere ser guiado
+Alta productividad
+Toma decisiones basadas en ++experiencias++ y es responsable de sus ++resultados++
+Entiende cómo puede causar impacto a sus usuarios
+Sabe tanto de software como del negocio
+Puede convertir a otras personas en senior devs

@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+body {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  background-image: url(./Assets/fondo2.jpeg);
+  background-size: cover;
+  width: 100vw;
+}
+
+#seleccionar-guerrero {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+}
+
+.título {
+  color: #bbcfb4;
+  text-shadow: 0px 10px 7px black;
+  font-size: 100px;
+  font-family: 'Righteous', cursive;
+  margin-bottom: 5px;
+  letter-spacing: 32px;
+}
+
+.subtitulo {
+  font-family: 'Itim', cursive;
+  font-size: 40px;
+  margin-top: 0px;
+  color: #F3DEBA;
+  text-shadow: 0px 0px 8px black;
+  display: flex;
+  justify-content: center;
+}
+
+#nombres {
+  margin-top: 5px;
+}
+
+.tarjetas {
+  display: flex;
+}
+
+.tarteja-mokepon {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  font-family: 'Itim', cursive;
+  background-color: rgb(241 222 201 / 70%);
+  width: 139px;
+  height: 172px;
+  border-radius: 20px;
+  color: #8D7B68;
+  font-size: 20px;
+
+}
+
+.tarteja-mokepon img {
+  width: 122px;
+}
+.seleccion {
+  width: 207px;
+  height: 54px;
+  border-radius: 60px;
+  border: none;
+  color: #D2BFA4;
+  background-color: #482E0A;
+  margin: 10px;
+  font-size: 18px;
+  font-family: 'Itim', cursive;
+  border: 2px outset #ffcea9;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  background-color:#ac967eb3;
+}
+
+#seleccionar-ataque {
+  flex-direction: column;
+  align-items: center;
+}
+
+.subtitulo2, .subtitulo3 {
+  font-family: 'Itim', cursive;
+  font-size: 40px;
+  margin-top: 0px;
+  color: #F3DEBA;
+  text-shadow: 0px 0px 8px black;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+
+}
+
+.boton-ataques {
+  width: 129px;
+  height: 71px;
+  border-radius: 90px;
+  border: 2px inset #ecc18b;
+  color: #D2BFA4;
+  background-color: #482E0A;
+  margin: 10px;
+  font-size: 18px;
+  font-family: 'Itim', cursive;
+}
+
+#mensajería {
+  font-family: 'Itim', cursive;
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  background-color: rgb(245 245 220 / 80%);
+  width: 329px;
+  height: 116px;
+  justify-content: center;
+  border-radius: 50px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+#resultado {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.boton-reiniciar {
+  display: flex;
+  margin-bottom: 20px;
+  display: block;
+  background: #caeac1;
+  border: 2px outset #83b49f;
+  border-radius: 16px;
+  font-size: 17px;
+  width: 160px;
+  height: 33px;
+  font-family: 'Itim', cursive;
+}
+
+.contenedor-ataques {
+  background-color: #597350ad;
+  border-radius: 20px;
+  margin-top: 20px;
+  width: 253px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 26px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: 'Itim', cursive;
+  color: #F3DEBA;
+}
+
+.ataques {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  font-family: 'Itim', cursive;
+  color: #F3DEBA;
+  justify-content: center;
+}
+
+#victorias, #victorias-enemigas {
+  font-size: 32px;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+.bloque-jugador, .bloque-enemigo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 21px;
+
+}
+
+#guerrero, #guerrero-enemigo {
+  font-size: 20px;
+}
+
+#ataque-jugador, #ataque-enemigo {
+  margin-top: 0px;
+}
+
+#ver-mapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo2 {
+  font-size: 50px;
+  letter-spacing: 5px;
+  color: #bbcfb4;
+  text-shadow: 0px 10px 7px black;
+  font-family: 'Righteous', cursive;
+  margin-top: 84px;
+  margin-bottom: 5px;
+}
+
+#mapa {
+  border: #796142 solid;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+#ver-mapa button {
+    width: 207px;
+    height: 54px;
+    border-radius: 60px;
+    border: none;
+    color: #D2BFA4;
+    background-color: #482E0A;
+    margin: 10px;
+    font-size: 18px;
+    font-family: 'Itim', cursive;
+    border: 2px outset #ffcea9;
+}
+
+@media (max-width: 600px) {
+  .tarjetas {
+    flex-direction: column;
+  }
+  
+  .subtitulo, .subtitulo2 {
+    font-size: 30px;
+  }
+
+  .título {
+    font-size: 56px;
+  }
+
+  #contenedor-ataques {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .boton-ataques {
+    width: 179px;
+    height: 62px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px outset #ecc18b;
+  }
+}

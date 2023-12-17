@@ -1,5 +1,6 @@
 import { useRoutes, BrowserRouter } from 'react-router-dom'; /* después de instalarlo en la terminal con npm install react-router-dom vamos a importarlo al archivo principal y esto no ayudará a crear rutas para que serán asignadas a cada archivo para que nos manden a una página diferente cuando se lo indiquemos por la url */
 /* browserRouter es quien se encargara de mostrar las rutas */
+import { BerryProvider } from '../../Context';
 import Home from '../Home';
 import MyAccount from '../MyAccount';
 import MyOrder from '../MyOrder';
@@ -25,10 +26,13 @@ const AppRoutes = () => {
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BerryProvider>
+        <BrowserRouter>
         <Navbar />
         <AppRoutes />
-      </BrowserRouter>
+        </BrowserRouter>
+      </BerryProvider>
+     
     </>
   )
 }

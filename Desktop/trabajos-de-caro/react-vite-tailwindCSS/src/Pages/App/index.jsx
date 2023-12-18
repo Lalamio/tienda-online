@@ -16,6 +16,7 @@ const AppRoutes = () => {
     { path: '/', /* la asignación de la ruta */ element: <Home /> },
     { path: '/my-account', element: <MyAccount /> },
     { path: '/my-order', element: <MyOrder /> },
+    { path: '/my-orders/last', element: <MyOrder /> },
     { path: '/my-orders', element: <MyOrders /> },
     { path: '/*', element: <NotFound /> },
     { path: '/sign-in', element: <SigIn /> },
@@ -27,13 +28,13 @@ const AppRoutes = () => {
 function App() {
   return (
     <>
-      <BerryProvider>
-        <CheckoutSideMenu />
         <BrowserRouter>
-        <Navbar />
-        <AppRoutes />
+          <BerryProvider>
+            <CheckoutSideMenu />
+            <Navbar />
+            <AppRoutes />
+          </BerryProvider>
         </BrowserRouter>
-      </BerryProvider>
      
     </>
   )

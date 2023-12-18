@@ -1,6 +1,8 @@
 import { useContext } from 'react'
+import { Link } from 'react-router-dom'
 import { BerryContext } from '../../Context'
 import OrderCard from '../OrderCard'
+import { totalPrice } from '../../utils'
 import './styles.css'
 
 const CheckoutSideMenu = () => {
@@ -9,6 +11,18 @@ const CheckoutSideMenu = () => {
   const handleDelete = (id) => {
     const filteredProducts = Context.carritoDeCompras.filter(product => product.id != id)
     Context.setCarritoDeCompras(filteredProducts)
+  }
+
+  const handleCheckout = () => {
+    const ordersToAdd = {
+      date: '18.12.23',
+      products: Context.carritoDeCompras,
+      totalProducts: Context.carritoDeCompras.length,
+      totalPrice: totalPrice(Context.carritoDeCompras)
+    }
+
+    Context.setOrder([...Context.order, ordersToAdd])
+    Context.setCarritoDeCompras([]);
   }
 
   return (
@@ -25,7 +39,7 @@ const CheckoutSideMenu = () => {
           </svg>
         </button>
       </div>
-      <article className='px-6 overflow-y-scroll'>
+      <article className='px-6 overflow-y-scroll flex-1'>
         {
           Context.carritoDeCompras.map(product => (
             <OrderCard 
@@ -39,8 +53,19 @@ const CheckoutSideMenu = () => {
           ))
         }
       </article>
-      
-    </aside>
+      <div className='px-12 mb-6 '>
+        <p className='flex justify-between'>
+          <span>Total: </span>
+          <span 
+            className='font-semibold'>
+              ${totalPrice(Context.carritoDeCompras)}
+          </span>
+        </p>
+          <Link to='/my-orders/last'>
+            <button className='w-full bg-black py-3 text-white rounded-lg mt-5' onClick={() => handleCheckout()}>Checkout</button>
+          </Link>
+      </div>
+    </aside>  
   )
 }
 

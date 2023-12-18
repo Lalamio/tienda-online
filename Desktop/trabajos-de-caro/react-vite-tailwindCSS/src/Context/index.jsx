@@ -13,7 +13,8 @@ export const BerryProvider = ({children}) => {
 
   /* estado para añadir productos al carrito de compras */
   const [carritoDeCompras, setCarritoDeCompras] = useState([]);
-  
+
+  const [order, setOrder] = useState([]);
 
   /* para abrir y cerrar la sección de los detalles del producto */
   const [isProductDetailOpen, setIsProductDetailOpen] = useState(false);
@@ -39,7 +40,9 @@ export const BerryProvider = ({children}) => {
       isSideMenuOpen,
       setIsSideMenuOpen,
       CloseSideMenu,
-      OpenSideMenu
+      OpenSideMenu,
+      order,
+      setOrder
     }}>
     {children}
     </BerryContext.Provider>
